@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import imageUrl from "./assets/abuelo.gif";
+</script>
 
 <template>
   <div class="container">
@@ -12,6 +14,8 @@
         allowfullscreen
         class="video"
       ></iframe>
+
+      <img :src="imageUrl" alt="El abuelo que canta" />
 
       <div class="lyrics">
         <div class="letra">
@@ -74,6 +78,13 @@ h1 {
 /* Styling for the video */
 .video {
   width: 100%; /* Make the video take up the full width of its container */
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Your existing media query styles */
